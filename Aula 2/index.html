@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"></script>
+    <script>
+      dayjs.locale('pt-br')
+    </script>
+    <script type="text/javascript" src="./index.js" defer=""></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+
+  <body>
+    <form onsubmit="adicionarParticipantes(event)">
+      <fieldset>
+        <legend>Inscrição</legend>
+        <div>
+          <input type="text" placeholder="Nome Completo" name="nome" required="">
+          <input type="email" placeholder="Email" name="email" required="">
+          <button>
+            REALIZAR A Inscrição
+          </button>
+        </div>
+      </fieldset>
+    </form>
+    <script>
+      dayjs.extend(window.dayjs_plugin_relativeTime)
+    </script>
+
+    <script type="text/javascript" src="./index.js" defer=""></script>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+
+
+
+    <table width="100%">
+      <thead style="text-align&gt; Left">
+        <tr>
+          <th>Participante</th>
+          <th>Data da Inscrição</th>
+          <th>Data do check-in</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+      </tbody>
+    </table>
+
+
+  </body>
+
+</html>
